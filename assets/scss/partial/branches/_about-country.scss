@@ -1,0 +1,28 @@
+#about-country{
+    background-color: rgb(233, 238, 242); 
+    padding: 15px;
+    margin-top: -200px;
+    
+
+    .top{
+        margin-top: 25px;
+
+        .calendar{
+            color: #595959;
+        }
+    }
+}
+
+@media(max-width:960px){
+    #about-country{
+        margin-top: 100px;
+        .col-md-12{
+           padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}

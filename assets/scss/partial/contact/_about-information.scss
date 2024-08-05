@@ -1,0 +1,26 @@
+#about-information {
+  margin-top: 30px;
+  .background {
+    background-color: rgb(245, 245, 245);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: $fontsize-16 * 2+2;
+      font-size: " SF Pro Display Regular";
+      line-height: 3px;
+      color: rgb(62, 61, 61);
+      font-weight: bold;
+    }
+
+    p {
+      font-size: $fontsize-14;
+      font-family: $font-family;
+      line-height: 3px;
+      color: rgb(54, 52, 52);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#about-contact{
+   .flex{
+    display: flex;
+    justify-content: center;
+
+    .contact{
+        padding: 0 20px;
+        box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
+        margin: 30px;
+        padding: 27px;
+        width: 400px;
+         span{
+            display: inline-block;
+
+            i{
+                color: $primary-color;
+                background-color: rgb(228, 237, 245);
+                padding: 10px;
+                border-radius: 20px;
+            }
+         }
+    }
+   }
+}
+
+@media(max-width:981px){
+   #about-contact{
+      .col-md-12{
+         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+   }
+}

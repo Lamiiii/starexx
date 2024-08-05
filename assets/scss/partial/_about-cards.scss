@@ -1,0 +1,68 @@
+#about-cards {
+  margin: 70px;
+
+  h3 {
+    font-size: $fontsize-16 + 10;
+  }
+
+  .padding {
+    border: 2px solid rgb(176, 175, 175);
+    margin: 10px;
+
+    .text {
+      color: $text-color;
+      padding: 10px;
+
+      h4 {
+        font-size: $fontsize-16;
+        color: black;
+      }
+
+      p {
+        font-size: $fontsize-16;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #about-cards {
+    .padding {
+      .text {
+        h4{
+            width: 100px;
+            white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: $fontsize-16+4;
+        }
+        p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .col-md-6{
+      width: 50%;
+    }
+    .none{
+      display: none;
+    }
+  }
+}
+
+@media(max-width:900px){
+  #about-cards{
+    .col-sm-12{
+      width: 100%;
+    }
+     .second-none{
+      display: none;
+     }
+  }
+}
+
+
+ 

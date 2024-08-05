@@ -1,0 +1,164 @@
+header {
+  background-image: url(/images/ixix.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid $white-color;
+  .logo {
+    display: flex;
+    margin-top: 20px;
+
+    svg {
+      margin-left: 120px;
+      margin-top: 25px;
+    }
+    h2 {
+      font-size: $fontsize-16 + 10;
+      font-weight: bold;
+      color: $primary-color;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navigation-list {
+    ul {
+      display: flex;
+      margin: 15px;
+      margin-top: 30px;
+      list-style-type: none;
+
+      li {
+        padding: 20px;
+
+        a {
+          text-decoration: none;
+          font-size: $fontsize-16;
+          font-family: $font-family;
+          color: $black-color;
+          &:hover {
+            border-bottom: 2px solid $primary-color;
+            color:$primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .col-3 {
+    .apply-btn {
+      display: flex;
+      margin-top: 35px;
+
+      .assign button {
+        @include button;
+      }
+
+      .declaration button {
+        @include button;
+        margin-left: 6px;
+        border: 1px solid $black-color;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  header {
+    .apply-btn .icon {
+      display: none;
+    }
+  }
+}
+
+header {
+  .logo {
+    .bi-list {
+      display: none;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1202px) {
+  header {
+    h2 {
+      color: $primary-color;
+    }
+    .navigation {
+      ul {
+        display: none;
+      }
+    }
+  }
+  header {
+    .apply-btn {
+      button {
+        display: none;
+      }
+    }
+  }
+
+  header {
+    .logo {
+      font-size: 20px;
+    }
+  }
+
+  header {
+    .logo {
+      .bi-list {
+        display: inline-block;
+        font-size: $fontsize-16 + 4;
+      }
+    }
+  }
+}
+
+@media (max-width: 1202px) {
+  header {
+    .logo {
+      h2 {
+        margin-top: 34px;
+      }
+      svg {
+        display: none;
+      }
+    }
+    background-image: none;
+    .col-3 {
+      margin-top: 14px;
+      .icon {
+        display: inline-block;
+        display: flex;
+
+        .bi-cart {
+          color: $primary-color;
+          border-radius: 17px;
+          padding: 6px;
+          background-color: rgb(209, 225, 238);
+          margin: 2px;
+        }
+
+        .bi-file-earmark-ruled {
+          color: orange;
+          background-color: rgb(250, 206, 125);
+          border-radius: 17px;
+          padding: 6px;
+          margin: 2px;
+        }
+
+        .bi-person {
+          color: $text-color;
+          background-color: gainsboro;
+          border-radius: 17px;
+          padding: 6px;
+          margin: 2px;
+        }
+      }
+    }
+  }
+}

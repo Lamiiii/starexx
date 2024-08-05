@@ -1,0 +1,84 @@
+#about-delivery {
+  margin-top: 60px;
+
+  .color {
+    @include color;
+  }
+
+  .padding{
+    padding: 10px;
+  }
+  .buy {
+    padding: 25px;
+    h3 {
+      font-size: $fontsize-16 * 2+4;
+      font-family: "SF Pro Display Medium";
+      margin: 0 0 16px;
+    }
+
+    p {
+      font-size: $fontsize-16;
+      font-family: "SF Pro Display Medium";
+      color: $text-color;
+    }
+  }
+
+  .area {
+    margin-left: 10px;
+    .contry {
+      select {
+        padding: 10px 32px 10px 16px;
+        width: 253px;
+        color: $text-color;
+      }
+    }
+
+    .point {
+      margin-top: 20px;
+      select {
+        padding: 10px 32px 10px 16px;
+        width: 253px;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@media(max-width:1200px){
+  #about-delivery .col-md-12  img{
+    height: 600px;
+  }
+}
+
+@media (max-width: 770px) {
+  #about-delivery .col-md-12 {
+    width: 100%;
+
+  }
+
+  #about-delivery .buy h3 {
+    font-size: $fontsize-16 * 2;
+  }
+
+  #about-delivery .buy p {
+    font-size: $fontsize-16 ;
+  }
+
+  #about-delivery .area .contry select {
+    width: 98%;
+    padding: 20px 42px 20px 26px;
+    font-size: $fontsize-16 ;
+    margin: 6px;
+  }
+
+  #about-delivery .area .point select {
+    width: 98%;
+    padding: 20px 42px 20px 26px;
+    font-size: $fontsize-16 ;
+    margin: 6px;
+  }
+
+  #about-delivery img {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin button {
+  width: 96px;
+  height: 45px;
+  background-color: $primary-color;
+  font-size: $fontsize-16;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  font-family: $font-family;
+}
+
+@mixin color {
+  background-color: rgb(238, 237, 237);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

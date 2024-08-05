@@ -1,0 +1,36 @@
+#programs {
+  .application {
+    margin-top: 100px;
+  }
+
+  .img {
+    display: flex;
+    margin-top: 35px;
+    img {
+      margin: 5px;
+    }
+  }
+  h3 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: $fontsize-16;
+  }
+}
+
+@media (max-width: 1000px) {
+  #programs .none {
+    display: none;
+  }
+  #programs .width {
+    width: 100%;
+  }
+
+  #programs .application {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

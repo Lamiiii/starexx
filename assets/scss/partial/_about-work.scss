@@ -1,0 +1,79 @@
+#about-work {
+  margin-top: 150px;
+
+  .work {
+    text-align: center;
+  }
+  h3 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: $fontsize-16;
+    font-family: $font-family;
+    color: $text-color;
+  }
+  .card {
+    box-shadow: 0 1px 1px 1px gainsboro;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    .write {
+      text-align: center;
+      font-family: $font-family;
+
+      h4 {
+        font-size: $fontsize-16 + 2;
+        color: rgb(143, 141, 141);
+      }
+
+      p {
+        font-size: $fontsize-16;
+        color: $text-color;
+      }
+    }
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .apply-btn {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    @include button;
+  }
+}
+
+@media (max-width: 970px) {
+  #about-work .col-sm-6 {
+    width: 50%;
+  }
+  #about-work .work h3 {
+    font-size: $fontsize-16*2;
+  }
+
+  #about-work .work p {
+    font-size: $fontsize-16;
+  }
+
+  #about-work .card .write h4 {
+    font-size: $fontsize-16;
+  }
+
+  #about-work .card .write p {
+    font-size: $fontsize-16;
+  }
+}
+
+@media (max-width: 740px) {
+  #about-work .col-md-12 {
+    width: 100%;
+  }
+}
